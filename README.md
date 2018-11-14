@@ -7,6 +7,7 @@ You've seen how you can extend your linear models by including interaction effec
 
 ## Objectives
 
+You will be able to:
 - Understand what the bias/variance trade-off is
 - Understand how bias-variance trade-off relates to underfitting and overfitting
 
