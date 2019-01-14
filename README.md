@@ -24,6 +24,8 @@ yld = pd.read_csv("yield2.csv", sep='\s+', index_col = 0)
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
+from sklearn.preprocessing import PolynomialFeatures
+import numpy as np
 
 yld.head()
 y = yld["Yield"]
@@ -40,7 +42,7 @@ plt.ylabel("Yield")
 
 
 
-    Text(0,0.5,'Yield')
+    Text(0, 0.5, 'Yield')
 
 
 
@@ -143,13 +145,13 @@ from sklearn.metrics import mean_squared_error
 
 X_fin_test = poly.fit_transform(data_test[0].values.reshape(-1, 1))
 y_pred = reg_poly.predict(X_fin_test)
-mean_squared_error(y_test, y_pred)
+mean_squared_error(data_test[1], y_pred)
 ```
 
 
 
 
-    0.4544755356264108
+    0.3843717782381719
 
 
 
@@ -187,13 +189,13 @@ plt.plot(X_linspace,y_poly_pred);
 
 X_fin_test = poly.fit_transform(data_test[0].values.reshape(-1, 1))
 y_pred = reg_poly.predict(X_fin_test)
-mean_squared_error(y_test, y_pred)
+mean_squared_error(data_test[1], y_pred)
 ```
 
 
 
 
-    0.3039736985816992
+    0.06124237736141859
 
 
 
