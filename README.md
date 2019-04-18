@@ -3,7 +3,7 @@
 
 ## Introduction
 
-You've seen how you can extend your linear models by including interaction effects as well as polynomial terms. Including these in models comes at a price though: not only do our models become more complex (with more parameter estimates), adding more terms can potentially harm model performance when performing predictions. You'll learn about that in this lesson.
+You've seen how you can extend your linear models by including interaction effects as well as polynomial terms. Including these in models comes at a price though: not only do the models become more complex (with more parameter estimates), adding more terms can potentially harm model performance when performing predictions. You'll learn about that in this lesson.
 
 ## Objectives
 
@@ -132,11 +132,11 @@ Let's formalize this:
 
 > *Underfitting* happens when a model cannot model the training data, nor can it generalize to new data.
 
-Our simple linear regression model fitter earlier was an underfitted model.
+The simple linear regression model fitter earlier was an underfitted model.
 
 > *Overfitting* happens when a model models the training data too well. In fact, so well that it is not generalizeable
 
-Our 6-degree polynomial was overfitted. Let's have a look at the mean squared error:
+The 6-degree polynomial was overfitted. Let's have a look at the mean squared error:
 
 
 
@@ -213,7 +213,7 @@ Another perspective on this problem of overfitting versus underfitting is the bi
 - *irreducible error*:
 
 Formally, this is written as: 
-$ MSE = Bias(\hat{f}(x))^2 + Var(\hat{f}(x)) + \sigma^2$. The derivation of this result can be found on the wikipedia page of the bias-variance trade-off, [here](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff#Derivation).
+$ MSE = Bias(\hat{f}(x))^2 + Var(\hat{f}(x)) + \sigma^2$. The derivation of this result can be found on the Wikipedia page of the bias-variance trade-off, [here](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff#Derivation).
 
 <img src="./images/bias_variance.png" alt="Drawing" style="width: 500px;"/>
 
