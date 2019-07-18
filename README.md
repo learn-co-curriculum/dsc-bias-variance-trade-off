@@ -215,7 +215,7 @@ Another perspective on this problem of overfitting versus underfitting is the bi
 Formally, this is written as: 
 $ MSE = Bias(\hat{f}(x))^2 + Var(\hat{f}(x)) + \sigma^2$. The derivation of this result can be found on the Wikipedia page of the bias-variance trade-off, [here](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff#Derivation).
 
-<img src="./images/new_bias_variance.png" alt="Drawing" style="width: 500px;"/>
+<img src="./images/new_bias_variance.png" alt="Drawing" width="500">
 
 - The bias arises when wrong assumptions are made when training a model. For example, an interaction effect is missed, or we didn't catch a certain polynomial relationship. Because of this, our algorithm to miss the relevant relations between predictors and target variable. Note how this is similar to underfitting!
 
