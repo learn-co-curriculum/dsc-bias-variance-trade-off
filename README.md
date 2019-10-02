@@ -85,7 +85,7 @@ plt.xlabel("Temperature");
 ![png](index_files/index_11_0.png)
 
 
-When including polynomials, however, the result changes. We included a polynomial of 6 here. Where the result seems to be very accurate for the training set, the picture is definitely different for the test set on the right hand side. Where the fit seemed to be good for the training set, the test set fit is not nearly as good. The problem is that our model did *not generalize well* to cases outside the training set.
+When including polynomials, however, the result changes. We included a polynomial of 6 here. Where the result seems to be very accurate for the training set, the picture is definitely different for the test set on the right-hand side. Where the fit seemed to be good for the training set, the test set fit is not nearly as good. The problem is that our model did *not generalize well* to cases outside the training set.
 
 
 ```python
@@ -132,7 +132,7 @@ Let's formalize this:
 
 > *Underfitting* happens when a model cannot model the training data, nor can it generalize to new data.
 
-The simple linear regression model fitter earlier was an underfitted model.
+The simple linear regression model fitter earlier was an underfit model.
 
 > *Overfitting* happens when a model models the training data too well. In fact, so well that it is not generalizeable
 
@@ -217,11 +217,11 @@ $ MSE = Bias(\hat{f}(x))^2 + Var(\hat{f}(x)) + \sigma^2$. The derivation of this
 
 <img src="./images/new_bias_variance.png" alt="Drawing" width="500">
 
-- The bias arises when wrong assumptions are made when training a model. For example, an interaction effect is missed, or we didn't catch a certain polynomial relationship. Because of this, our algorithm to miss the relevant relations between predictors and target variable. Note how this is similar to underfitting!
+- The bias arises when wrong assumptions are made when training a model. For example, an interaction effect is missed, or we didn't catch a certain polynomial relationship. Because of this, our algorithm to miss the relevant relations between predictors and the target variable. Note how this is similar to underfitting!
 
 - The variance arises  when a model is too sensitive to small fluctuations in the training set. When variance is high, random noise in the training data is modeled, rather than the intended outputs. This is overfitting!
 
-The balance between bias and variance is a trade-off. We can reduce the variance but then there is a risk of running a bigger bias, and vice versa. Bias is usually associated with low model complexity, variance with high model complexity. There is generally a "sweet spot" in between, compromising between bias and variance. Read the additional resource below for more insights!
+The balance between bias and variance is a trade-off. We can reduce the variance but then there is a risk of running a bigger bias, and vice versa. Bias is usually associated with low model complexity, variance with high model complexity. There is generally a "sweet spot" in-between, compromising between bias and variance. Read the additional resource below for more insights!
 
 ## Additional resources
 
@@ -229,4 +229,4 @@ https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942
 
 ## Summary
 
-Great, now you know what bias-variance trade-off is, what underfitting and overfitting is, and how all of these relate, let's dive in for some practice!
+Great, now you know what bias-variance trade-off is, what underfitting and overfitting are, and how all of these relate, let's dive in for some practice!
