@@ -1,8 +1,7 @@
 # Bias-Variance Tradeoff
 
 ## Introduction
-
-You've seen how you can extend your linear models by including interaction effects as well as polynomial terms. Including these in models comes at a price though: not only do the models become more complex (with more parameter estimates), adding more terms can potentially harm model performance when making predictions. This tradeoff between performance on the training data and performance making predictions is called the bias-variance tradeoff. You'll learn about that in this lesson.
+Now that you have some experience building linear models, we will see how you can extend your linear models by including interaction effects and polynomial terms. Including these in models comes at a price though: not only do the models become more complex (with more parameter estimates), but adding more terms can potentially harm model performance when making predictions. This tradeoff between performance on the training data and performance-making predictions is called the bias-variance tradeoff. You'll learn about that in this lesson.
 
 ## Objectives
 
